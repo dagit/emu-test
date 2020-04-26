@@ -1,0 +1,13 @@
+[package]
+name = "emu-test"
+version = "0.1.0"
+authors = ["Jason Dagit <dagitj@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+genawaiter = { version = "0.99.1", features = ["futures03"] }
+futures = "0.3"
+tokio = { version = "*", features = ["rt-core", "stream", "macros"] }
+async-std = "1.5.0"
